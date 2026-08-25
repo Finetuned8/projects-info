@@ -3,7 +3,7 @@ on:
   pull_request_target:
     types: [opened, edited, synchronize, reopened]
     paths:
-      - networks/**
+      - assets/**
 
 
 jobs:
@@ -17,13 +17,17 @@ jobs:
           labels: |
             Signature Verified
             Signature Not-Verified
+            Logo Format Error
       - uses: actions-ecosystem/action-add-labels@v1
         with:
           labels: Waiting Signature Verifier
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v6
       - name: Get changed files
         id: changed-files
-        uses: tj-actions/changed-files@v18.4
+        uses: tj-actions/changed-files@v47
+        with:
+          base_sha: ${{ github.event.pull_request.base.sha }}
+          sha: ${{ github.event.pull_request.head.sha }}
 
       - name: Check signature
         uses: ./.github/actions/checker
@@ -44,6 +48,11 @@ jobs:
         if: success() && steps.signature.outputs.verified == 'true'
         with:
           labels: Signature Verified
+      - name: Label when logo format error
+        uses: actions-ecosystem/action-add-labels@v1
+        if: "!cancelled() && steps.signature.outputs.logoVerified == 'false'"
+        with:
+          labels: Logo Format Error
       - name: Label remove when disapproved
         uses: actions-ecosystem/action-add-labels@v1
         if: failure() || steps.signature.outputs.verified == 'false'

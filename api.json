@@ -4,5 +4,7 @@
     "rococo": "https://rococo.api.subscan.io",
     "westend": "https://westend.api.subscan.io",
     "statemine": "https://statemine.api.subscan.io",
-    "statemint": "https://statemint.api.subscan.io"
+    "statemint": "https://statemint.api.subscan.io",
+    "coretime-kusama": "https://coretime-kusama.api.subscan.io",
+    "coretime-polkadot": "https://coretime-polkadot.api.subscan.io"
 }
