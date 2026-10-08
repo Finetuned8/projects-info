@@ -1,4 +1,5 @@
-name: name:name: CI
+name:
+upload_assets.yaml CI
 
 on:
   push:
