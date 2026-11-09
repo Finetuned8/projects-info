@@ -1,0 +1,18 @@
+{
+    "data": {
+        "ParaID": 2000,
+        "Project Name": "Karura",
+        "Logo": "../../assets/images/acala.svg",
+        "Description (en)": "Karura is the decentralized financial hub of Kusama, a scalable multi-chain network for radical innovation. Karura is a sister network to Acala and offers a suite of financial primitives, including a trustless staking derivative (Liquid KSM), a multi-collateralized stablecoin backed by cross-chain assets (kUSD), and an AMM DEX.",
+        "Description (zh)": "Karura 是 Kusama 的去中心化金融中心，Kusama 是一个用于激进创新的可扩展多链网络。Karura 是 Acala 的姐妹网络，提供一套金融原语，包括无需信任的质押衍生品（Liquid KSM）、由跨链资产支持的多抵押稳定币（kUSD）和 AMM DEX。",
+        "Auction Reward & Reward Vesting Schedule (en)": "https://acala.network/karura/crowdloan",
+        "Auction Reward & Reward Vesting Schedule (zh)": "https://acala.network/karura/crowdloan",
+        "Website Link": "https://acala.network/karura",
+        "Twitter Link": "https://twitter.com/KaruraNetwork",
+        "Telegram Link": "https://t.me/karuranetwork",
+        "Discord Link": "https://discord.gg/6QHVY4X",
+        "Medium Link": "https://medium.com/acalanetwork",
+        "Github Link": "https://github.com/AcalaNetwork",
+        "Owner account": "CbQtmThUYAwSW4SJVZrp8kzVFNoSDhenPS3cwCDVU7QgC12"
+    }
+}
