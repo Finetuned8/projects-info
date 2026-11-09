@@ -4,6 +4,15 @@ This repo contains info of projects used in [Subscan parachain module](https://r
 
 ## Changelog
 
+### 2.2.2
+
+- Add Karura (Acala's Kusama network) project info to `networks/kusama/parachain/acala.json`
+- Fix: capitalize "Liquid KSM" in Karura English description
+
+### 2.2.1
+
+- Fix: update template ParaID
+
 ### 2.2.0
 
 Refactor: use gcp img instead of inline img to reduce package size
